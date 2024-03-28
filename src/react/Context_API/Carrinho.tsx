@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useContext } from "react";
-import { CartContext, contextCartType } from './CartContext';
+import { CartContext, contextCartType } from './CartContext_UseExample';
 
 const Carrinho = () => {
   const { cart, removeToCart } = useContext<contextCartType>(CartContext)

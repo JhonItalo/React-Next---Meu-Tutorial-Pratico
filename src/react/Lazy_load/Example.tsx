@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Suspense } from "react";
 
+//fetch
 const FormComplete = React.lazy(async () => import("../Forms/validation"));
 
 function LazyLoad() {

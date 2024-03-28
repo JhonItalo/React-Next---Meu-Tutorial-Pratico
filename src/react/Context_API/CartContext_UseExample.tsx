@@ -2,7 +2,7 @@
 
 import React, { createContext, useState, useEffect, useCallback } from "react";
 import { getLocalStorage, setLocalStorage } from "@/web/LocalStorage";
-import useFirstRender from "../Custom_Hooks/usefirstRender";
+import useFirstRender from "../Custom_Hooks/usefirstRender_UseExample";
 
 export interface CartType {
     name: string,

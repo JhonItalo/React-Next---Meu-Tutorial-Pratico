@@ -2,7 +2,7 @@
 import React from 'react'
 
 
-import useCartZustand from './useCartZustand'
+import useCartZustand from './useCartZustand_UseExample'
 //este componente tem que ser obrigatoriamente importando atraves do dynamic import do next com ssr desabilitado. o gerenciador de estado do zustand utiliza do localStorage.
 
 const CarrinhoZustand = () => {

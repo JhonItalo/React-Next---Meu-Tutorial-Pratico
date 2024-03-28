@@ -1,6 +1,7 @@
 "use client";
 
 interface aboutProps {
+    active: boolean
     model: {
         title: string;
         subtitle: string;
@@ -9,15 +10,16 @@ interface aboutProps {
     };
 }
 
-function AboutViewModel() {
-    return <AboutView model={useAboutModel()} />;
+function AboutViewModel({ active }: { active: boolean }) {
+    return <AboutView active={active} model={useAboutModel()} />;
 };
 
 
-function AboutView({ model }: aboutProps) {
+function AboutView({ active, model }: aboutProps) {
     const { title, subtitle, price, onclick } = model;
     return (
         <div>
+            {active && <p>está ativo</p>}
             <button className="w-14 h-52 bg-orange-400" onClick={onclick}></button>
             <p>{title}</p>
             <p>{subtitle}</p>

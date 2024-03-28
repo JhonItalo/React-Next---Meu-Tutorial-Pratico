@@ -30,8 +30,8 @@ function UseState() {
 
   return (
     <div>
-      <button onClick={handleClickAlterNumero}>numero</button>
-      <button onClick={handleClickAlterValue}>value</button>
+      <button onClick={handleClickAlterNumero}>{number}</button>
+      <button onClick={handleClickAlterValue}>{value}</button>
       <button onClick={handleClickAlterArray}>array</button>
       <button onClick={handleClickAlterObject}>object</button>
     </div>
