@@ -15,10 +15,11 @@ export default function UseClient() {
         console.error("Error fetching data:", error);
       }
     };
-  });
+    fetchData()
+  }, []);
   return (
     <>
-      <div></div>
+      <div>{data}</div>
     </>
   );
 }

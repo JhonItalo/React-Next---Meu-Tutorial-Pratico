@@ -23,6 +23,7 @@ const ServerSide = async () => {
     noStore()
     return user
   }
+  
   const user = users()
 
   return (
